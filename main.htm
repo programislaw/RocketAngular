@@ -1,0 +1,31 @@
+<table border = "0">
+   <tr>
+      <td>Nick name:</td>
+      <td><input type = "text" ng-model = "attendee.nickName"></input></td>
+   </tr>
+   
+   <tr>
+      <td>Score: </td>
+      <td><input type = "text" ng-model = "attendee.score"></input></td>
+   </tr>
+   
+   <tr>
+      <td>Name: </td>
+      <td>{{attendee.full()}}</td>
+   </tr>
+   
+   <tr>
+   </tr>
+   
+   <tr>
+	   <td>
+	   </td>
+	  <td>
+		 <button ng-click = "attendees.addAttendee(attendee.nickName,attendee.score)">Add new record</button>
+	  </td>
+   </tr>
+      <tr>
+      <td>Greeting: </td>
+      <td>{{greeting}}</td>
+   </tr>
+</table>
